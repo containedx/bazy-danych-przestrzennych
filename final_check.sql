@@ -1,0 +1,15 @@
+SELECT  (SELECT COUNT(*) FROM zawarty.clip ) AS cnt_clip,
+        (SELECT COUNT(*) FROM zawarty.dumppolygons ) AS cnt_dumppolygons,
+        (SELECT COUNT(*) FROM zawarty.intersection ) AS cnt_intersection,
+        (SELECT COUNT(*) FROM zawarty.intersects ) AS cnt_intersects,
+        (SELECT COUNT(*) FROM zawarty.landsat_nir ) AS cnt_landsat_nir,
+        (SELECT COUNT(*) FROM zawarty.paranhos_dem ) AS cnt_paranhos_dem,
+        (SELECT COUNT(*) FROM zawarty.paranhos_slope ) AS cnt_paranhos_slope,
+        (SELECT COUNT(*) FROM zawarty.paranhos_slope_reclass ) AS cnt_paranhos_slope_reclass,
+        (SELECT COUNT(*) FROM zawarty.porto_ndvi ) AS cnt_porto_ndvi,
+        (SELECT COUNT(*) FROM zawarty.porto_ndvi2 ) AS cnt_porto_ndvi2,
+        (SELECT COUNT(*) FROM zawarty.porto_parishes ) AS cnt_porto_parishes,
+        (SELECT COUNT(*) FROM zawarty.tpi30 ) AS cnt_tpi30,
+        (SELECT COUNT(*) FROM zawarty.tpiporto ) AS cnt_tpi30_porto,
+        (SELECT COUNT(*) FROM zawarty.union ) AS cnt_union;
+		
